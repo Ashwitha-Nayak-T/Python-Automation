@@ -1,0 +1,7 @@
+import requests
+
+resp=requests.get("https://www.flickr.com/services/rest/?method=flickr.photos.getPopular&api_key=aca1ea0e0435e4905797db777abaa72a&user_id=196222494%40N02&format=json&nojsoncallback=1")
+
+print(resp.status_code)
+
+print(resp.json())
